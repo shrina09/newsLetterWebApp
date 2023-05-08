@@ -7,6 +7,7 @@ require('dotenv').config();
 const app = express();
 
 const api_key = process.env.API_KEY;
+console.log(api_key);
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
